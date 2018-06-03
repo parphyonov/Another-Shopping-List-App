@@ -27,6 +27,8 @@ while True:
     elif command == 'add':
         new_item = input('What do you add to the list? ')
         shopping_list.append(new_item)
+        print('')
+        print('There are currently {} list items in your shopping list!'.format(len(shopping_list)))
         continue
     elif command == 'show':
         print('')

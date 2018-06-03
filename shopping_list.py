@@ -13,8 +13,10 @@ def clear():
         os.system('clear')
 
 def show_list(shopping_list):
+    print('')
     for item in shopping_list:
         print('{}. {}'.format(shopping_list.index(item) + 1, item))
+    print('')
 
 clear()
 
@@ -38,5 +40,8 @@ while True:
         print('Type ADD to add an item to the shopping list.')
         print('Type SHOW to have a look at the full list.')
         print('Type DONE to close the app.')
+        continue
     else:
         continue
+
+show_list(shopping_list)
